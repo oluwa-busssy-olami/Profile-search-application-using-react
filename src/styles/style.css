@@ -85,6 +85,7 @@ body {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
+  align-items: center;
 }
 
 .profileContainer img {
@@ -96,4 +97,14 @@ body {
 .profileDatprofile {
   display: flex;
   flex-direction: column;
+}
+
+.profileDataID,
+.profileDataName {
+  opacity: 0.6;
+}
+
+.profileDataName {
+  margin-top: 4px;
+  font-weight: 600;
 }
