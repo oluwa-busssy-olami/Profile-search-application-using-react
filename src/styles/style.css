@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
 body {
-  width: 100vw;
+  width: 80%;
   height: 100vh;
   background-image: linear-gradient(
     to bottom,
@@ -25,19 +25,75 @@ body {
   );
   font-family: Roboto, RobotoDraft, Halvetica, Arial, sans-serif;
   font-size: 16px;
+  margin: 0 auto;
   /* text-align: center; */
   /* margin: 0px 400px; */
 }
 
 .searchInput {
   margin-top: 60px;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .searchInput input {
-  width: 50%;
+  width: 60%;
   align-items: center;
+  padding: 14px;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+/* .profilesData {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+} */
+
+.profilesData ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 63%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0 30px;
+  place-content: center;
+  /* background-color: #fff; */
+  gap: 10px;
+}
+
+/* .profiledataContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+.profileContainer {
+  gap: 12px;
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.profileContainer img {
+  width: 15%;
+  display: block;
+  border-radius: 3px;
+}
+
+.profileDatprofile {
+  display: flex;
+  flex-direction: column;
 }

@@ -5,7 +5,9 @@ const App = () => {
   const peoplesDetails = ProfileData.map((ProfileData, index) => {
     return (
       <div className="Container">
-        <li key={ProfileData.id} className="profileId">
+        {" "}
+        {/* <div className="ProfiledataContainer"> */}{" "}
+        <li key={ProfileData.id} className="profileContainer">
           {" "}
           {/* {ProfileData.id}{" "} */}{" "}
           <img
@@ -24,6 +26,7 @@ const App = () => {
             </span>{" "}
           </div>{" "}
         </li>{" "}
+        {/* </div>{" "} */}{" "}
       </div>
     );
   });
