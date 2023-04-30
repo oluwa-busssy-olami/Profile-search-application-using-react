@@ -108,3 +108,35 @@ body {
   margin-top: 4px;
   font-weight: 600;
 }
+
+@media (max-width: 875px) {
+  body {
+    width: 90%;
+  }
+  .searchInput {
+    margin-top: 30px;
+  }
+  .searchInput input {
+    width: 100%;
+  }
+  ::placeholder {
+    font-size: 13px;
+  }
+  .profilesData ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0px;
+  }
+  .profileContainer {
+    padding: 10px 30px 10px 20px;
+    margin-bottom: 12px;
+  }
+  .profileContainer img {
+    width: 20%;
+    display: block;
+    /* border-radius: 3px; */
+  }
+}
