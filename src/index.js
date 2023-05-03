@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import SearchInput from "./component/SearchInput";
-import App from "./component/App";
-import "./styles/style.css";
+import Parentcomonent from "./component/Parentcomonent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <SearchInput />
-    <App />
+    <Parentcomonent />
   </React.StrictMode>
 );
 

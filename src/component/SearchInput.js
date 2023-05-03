@@ -3,16 +3,15 @@ import { ProfileData } from "../Data/ProfileData.js";
 
 const SearchInput = () => {
   const [search, setSearch] = useState("");
+  const [filteredProfile, setFilteredProfile] = useState([]);
 
   const handleSearchInput = (event) => {
-    setSearch(event.target.value);
-  };
+    const query = event.target.value;
+    setSearch(query);
 
-  const profileOject = ["id", "title", "firstName", "lastName"];
-  const inputSearch = ({ ProfileData }) => {
-    return { ProfileData }.filter((profilePerson) =>
-      profileOject.some((profileOjects) =>
-        profileOject[profileOjects].toLowerCase().includes(search.toLowerCase())
+    setFilteredProfile(
+      ProfileData.filter((profiledat) =>
+        profiledat.firstName.toLowerCase().includes(query.toLowerCase())
       )
     );
   };

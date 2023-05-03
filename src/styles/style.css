@@ -113,6 +113,7 @@ body {
 @media (max-width: 875px) {
   body {
     width: 90%;
+    height: 100vh;
   }
   .searchInput {
     margin-top: 30px;
