@@ -14,18 +14,18 @@ const App = ({ search }) => {
         userProfile.title.toLowerCase().includes(query)
       );
     });
-    console.log(newProfile);
+    //console.log(newProfile);
     setFilteredProfile(newProfile);
   };
   useEffect(() => {
-    console.log("busolami");
+    // console.log("busolami");
     if (search) {
       handleSearchInput();
     }
-  }, []);
+  }, [search]);
   //const [searchProfile, setSearchProfile] = new useState({ProfileData})
   const peoplesDetails = () => {
-    console.log(ProfileData);
+    //console.log(ProfileData);
     let data = [...ProfileData];
     if (search) {
       data = [...filteredProfile];

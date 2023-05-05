@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { ProfileData } from "../Data/ProfileData.js";
 
 const SearchInput = ({ search, setSearch }) => {
   const handleSearchInput = (e) => {
