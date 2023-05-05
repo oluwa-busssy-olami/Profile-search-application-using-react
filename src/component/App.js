@@ -1,10 +1,10 @@
-import React from "react";
 import { ProfileData } from "../Data/ProfileData.js";
 
 const App = () => {
+  //const [searchProfile, setSearchProfile] = new useState({ProfileData})
   const peoplesDetails = ProfileData.map((ProfileData, index) => {
     return (
-      <div className="Container">
+      <div className="Container" key={ProfileData.id}>
         {" "}
         {/* <div className="ProfiledataContainer"> */}{" "}
         <li key={ProfileData.id} className="profileContainer">
