@@ -1,31 +1,10 @@
 import React, { useState } from "react";
 import { ProfileData } from "../Data/ProfileData.js";
 
-const SearchInput = () => {
-  const [search, setSearch] = useState("");
-  //const [filteredProfile, setFilteredProfile] = useState([]);
-
-  const handleSearchInput = (event) => {
-    const query = event.target.value;
-    // setSearch(query);
-    // const newProfile = ProfileData.filter((userProfile) => {
-    //   return userProfile.firstName.toLowerCase().includes(query.toLowerCase());
+const SearchInput = ({ search, setSearch }) => {
+  const handleSearchInput = (e) => {
+    setSearch(e.target.value);
   };
-
-  //);
-
-  // setFilteredProfile(newProfile);
-
-  // };
-  console.log(
-    ProfileData.filter(
-      (dataUser) =>
-        dataUser.firstName.toLowerCase().includes(query) ||
-        dataUser.lastName.toLowerCase().includes(query) ||
-        dataUser.title.toLowerCase().includes(query)
-    )
-  );
-
   return (
     <div className="searchInput">
       <input
